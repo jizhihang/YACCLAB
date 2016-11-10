@@ -1,6 +1,4 @@
 language: cpp
-# TODO check this flag
-sudo: false
 
 compiler:
   - gcc
