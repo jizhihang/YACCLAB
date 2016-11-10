@@ -47,4 +47,4 @@ script:
   - cd [project_dir]
   - cmake .
   - make
-- ./[application_name] [params]
+  - ./[application_name] [params]
