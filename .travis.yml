@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update
  
 install:
-
+  - sudo apt-get install gnuplot
 # OpenCV v3.0.0 (beta) install code (modified from orignal source: https://github.com/jayrambhia/Install-OpenCV)
 
   # OpenCV dependencies - Details available at: http://docs.opencv.org/trunk/doc/tutorials/introduction/linux_install/linux_install.html
@@ -47,4 +47,3 @@ script:
   - cd [project_dir]
   - cmake .
   - make
-  - ./[application_name] [params]
