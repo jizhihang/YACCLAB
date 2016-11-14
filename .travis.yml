@@ -2,13 +2,16 @@ language: cpp
 
 compiler:
   - gcc
-  #- clang
+  - clang
   
 before_install:
   - sudo apt-get update
+  - sudo apt-get update cmake
  
 install:
+# Install gnuplot
   - sudo apt-get install gnuplot
+
 # OpenCV v3.0.0 (beta) install code (modified from orignal source: https://github.com/jayrambhia/Install-OpenCV)
 
   # OpenCV dependencies - Details available at: http://docs.opencv.org/trunk/doc/tutorials/introduction/linux_install/linux_install.html
@@ -44,6 +47,4 @@ install:
   - cd ../../
 
 script:
-  - cd [project_dir]
-  - cmake .
-  - make
+  - ls
