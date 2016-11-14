@@ -6,7 +6,7 @@ compiler:
   
 before_install:
   - sudo apt-get update
-  - sudo apt-get update cmake
+  - sudo apt-get install cmake
  
 install:
 # Install gnuplot
